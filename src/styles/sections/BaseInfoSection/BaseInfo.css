@@ -1,0 +1,23 @@
+.base-info {
+    display: flex;
+    justify-content: center;
+    min-height: 60vh;
+    gap: var(--base-info-gap);
+}
+
+.base-info__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: var(--base-card-width);
+}
+
+.base-info__icon {
+    width: var(--base-icon-width);
+    margin-bottom: var(--base-icon-bottom);
+}
+
+.base-info__title {
+    margin-bottom: var(--base-title-bottom);
+}

@@ -4,37 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee shop</title>
+    <link rel="stylesheet" href="./src/styles/main.css">
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <img src="./assets/LOGO.png" alt="Логотип"/>
+    <header class="header" id="main-header">
+        <div>
+            <div class="header__title">
+                <img class="header__icon" src="./assets/LOGO.png" alt="Логотип"/>
+                <h1>YOUR <span class="header__title-accent">PERSONALIZED</span> COFFEE</h1>
+            </div>
+        </div>
 
-        <h1>ВАШ ПЕРСОНАЛИЗИРОВАННЫЙ КОФЕ</h1>
+        <img class="header__image" src="./assets/img/banner.png" alt="Баннер главной страницы"/>
 
-        <img src="./assets/img/banner.png" alt="Баннер главной страницы"/>
-
-        <aside>
-            <img src="./assets/icons/shopping-cart.png" alt="Корзина"/>
+        <aside class="nav">
+            <a class="nav__icon-link" href="#"><img class="nav__icon" src="./assets/icons/shopping-cart.png" alt="Корзина"/></a>
             <nav>
-                <ul>
+                <ul class="nav__list">
                     <li>
-                        <a href="#">навигационная ссылка</a>
+                        <a class="nav__link" href="#main-header">ГЛАВНАЯ</a>
                     </li>
                     <li>
-                        <a href="#">навигационная ссылка</a>
+                        <a class="nav__link" href="#base-info">ПРО КОФЕ</a>
                     </li>
                     <li>
-                        <a href="#">навигационная ссылка</a>
+                        <a class="nav__link" href="#coffee-line-horiz">ВИДЫ КОФЕ</a>
                     </li>
                     <li>
-                        <a href="#">навигационная ссылка</a>
+                        <a class="nav__link" href="#giftset">ПОДАРОЧНЫЕ НАБОРЫ</a>
                     </li>
                     <li>
-                        <a href="#">навигационная ссылка</a>
-                    </li>
-                    <li>
-                        <a href="#">навигационная ссылка</a>
+                        <a class="nav__link" href="#coffee-line-vert">КОМБО</a>
                     </li>
                 </ul>
             </nav>
@@ -42,212 +43,376 @@
     </header>
 
     <main>
-        <section>
-            <header>
-                <p>Ваш персонализированный кофе</p>
+        <section id="base-info">
+            <header class="titleArea">
+                <p class="titleArea__subtitle">Ваш персонализированный кофе</p>
                 <h2>КОФЕ СОЗДАЕТ ВАШУ БАЗУ</h2>
             </header>
 
-            <div>
-                <article>
-                    <img src="./assets/icons/coffee-house.png" alt="Иконка кофейни"/>
-                    <h3>Происхождения</h3>
-                    <p>Некоторые зерна кофе Arabica, Robusta соответствуют международным стандартам качества.</p>
+            <div class="base-info">
+                <article class="base-info__card">
+                    <img class="base-info__icon animation" src="./assets/icons/coffee-house.png" alt="Иконка кофейни"/>
+                    <h3 class="base-info__title">Происхождения</h3>
+                    <p>Зерна Robusta соответствуют международным стандартам качества.</p>
                 </article>
                 
-                <article>
-                    <img src="./assets/icons/coffee-signboard.png" alt="Иконка вывески кофейни"/>
-                    <h3>Качество</h3>
-                    <p>Каждый зерно кофе является результатом тщательного процесса концентрации высокого качества от&nbsp;кофеварщика.</p>
+                <article class="base-info__card">
+                    <img class="base-info__icon animation" src="./assets/icons/coffee-signboard.png" alt="Иконка вывески кофейни"/>
+                    <h3 class="base-info__title">Качество</h3>
+                    <p>Каждое зерно кофе - результат высокого качества от&nbsp;кофеварщика.</p>
                 </article>
 
-                <article>
-                    <img src="./assets/icons/coffee-bags.png" alt="Иконка пакетов кофе"/>
-                    <h3>Орехи</h3>
+                <article class="base-info__card">
+                    <img class="base-info__icon animation" src="./assets/icons/coffee-bags.png" alt="Иконка пакетов кофе"/>
+                    <h3 class="base-info__title">Орехи</h3>
                     <p>70% качество кофе доходит до&nbsp;вас от&nbsp;источника и&nbsp;качества green bean.</p>
                 </article>
 
-                <article>
-                    <img src="./assets/icons/coffee-machine.png" alt="Иконка кофемашины"/>
-                    <h3>Приготовление</h3>
-                    <p>Кофе зерна проходят через тщательный процесс прокола и&nbsp;тщательного и&nbsp;строгого процесса.</p>
+                <article class="base-info__card">
+                    <img class="base-info__icon animation" src="./assets/icons/coffee-machine.png" alt="Иконка кофемашины"/>
+                    <h3 class="base-info__title">Приготовление</h3>
+                    <p>Зерна проходят через процесс прокола и&nbsp;&nbsp;строгого процесса.</p>
                 </article>
             </div>
         </section>
 
-        <section>
-            <header>
-                <p>Выбери Свой Любимый</p>
+        <section id="coffee-line-horiz" class="coffee__section">
+            <div class="coffee__background coffee__background-horiz"></div>
+            <header class="titleArea">
+                <p class="titleArea__subtitle">Выбери Свой Любимый</p>
                 <h2>ПОЛУЧИТЬ!</h2>
             </header>
 
-            <div>
-                <article>
-                    <img src="./assets/img/w-coffee-yellow.png" alt="Упаковка кофе с желтой наклейкой"/>
+            <div class="coffee__line coffee__line-horiz">
+                <article class="coffee__card coffee__card-horiz">
+                    <div class="coffee__container coffee__container-horiz">
+                        <img class="coffee__image animation" src="./assets/img/w-coffee-yellow.png" alt="Упаковка кофе с желтой наклейкой"/>
+                    </div>
 
-                    <h4>99.000</h4>
-                    <h3>REVO Morning</h3>
-                    <p>горький, послевкусие сладкое, цветочное</p>
+                    <div class="coffee__content coffee__content-horiz">
+                        <h4 class="coffee__price coffee_price-horiz">99.000</h4>
+                        <h3>REVO Morning</h3>
+                        <p class="coffee__description">горький, послевкусие сладкое, цветочное</p>
 
-                    <div>
-                        <button>Купить сейчас</button>
-                        <button>Подробнее</button>
+                        <div class="coffee__actions">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
+                        </div>
                     </div>
                 </article>
 
-                <article>
-                    <img src="./assets/img/coffee-orange.png" alt="Упаковка кофе с оранжевой наклейкой"/>
+                <article class="coffee__card coffee__card-horiz">
+                    <div class="coffee__container coffee__container-horiz">
+                        <img class="coffee__image animation" src="./assets/img/coffee-orange.png" alt="Упаковка кофе с оранжевой наклейкой"/>
+                    </div>
 
-                    <h4>139.000</h4>    
-                    <h3>REVO Origin</h3>
-                    <p>последний вкус сладкий, небольшой горький, вкус души</p>
+                    <div class="coffee__content coffee__content-horiz">
+                        <h4 class="coffee__price coffee_price-horiz">139.000</h4>    
+                        <h3>REVO Origin</h3>
+                        <p class="coffee__description">последний вкус сладкий, небольшой горький, вкус души</p>
 
-                    <div>
-                        <button>Купить сейчас</button>
-                        <button>Подробнее</button>
+                        <div class="coffee__actions">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
+                        </div>
                     </div>
                 </article>
 
-                <article>
-                    <img src="./assets/img/w-coffee-blue.png" alt="Упаковка кофе с синей наклейкой"/>
+                <article class="coffee__card coffee__card-horiz">
+                    <div class="coffee__container coffee__container-horiz">
+                        <img class="coffee__image animation" src="./assets/img/w-coffee-blue.png" alt="Упаковка кофе с синей наклейкой"/>
+                    </div>
 
-                    <h4>85.000</h4>
-                    <h3>REVO Everyday</h3>
-                    <p>сбалансированный, послевкусие горького шоколада</p>
+                    <div class="coffee__content coffee__content-horiz">
+                        <h4 class="coffee__price coffee_price-horiz">85.000</h4>
+                        <h3>REVO Everyday</h3>
+                        <p class="coffee__description">сбалансированный, послевкусие горького шоколада</p>
 
-                    <div>
-                        <button>Купить сейчас</button>
-                        <button>Подробнее</button>
+                        <div class="coffee__actions">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
+                        </div>
                     </div>
                 </article>
 
-                <article>
-                    <img src="./assets/img/w-coffee-brown.png" alt="Упаковка кофе с коричневой наклейкой"/>
+                <article class="coffee__card coffee__card-horiz">
+                    <div class="coffee__container coffee__container-horiz">
+                        <img class="coffee__image animation" src="./assets/img/w-coffee-brown.png" alt="Упаковка кофе с коричневой наклейкой"/>
+                    </div>
 
-                    <h4>75.000</h4>
-                    <h3>REVO Đậm Đà</h3>
-                    <p>насыщенный, горьковатый, традиционный</p>
+                    <div class="coffee__content coffee__content-horiz">
+                        <h4 class="coffee__price coffee_price-horiz">75.000</h4>
+                        <h3>REVO Đậm Đà</h3>
+                        <p class="coffee__description">насыщенный, горьковатый, традиционный</p>
 
-                    <div>
-                        <button>Купить сейчас</button>
-                        <button>Подробнее</button>
+                        <div class="coffee__actions">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="coffee__card coffee__card-horiz">
+                    <div class="coffee__container coffee__container-horiz">
+                        <img class="coffee__image animation" src="./assets/img/w-coffee-yellow.png" alt="Упаковка кофе с желтой наклейкой"/>
+                    </div>
+
+                    <div class="coffee__content coffee__content-horiz">
+                        <h4 class="coffee__price coffee_price-horiz">99.000</h4>
+                        <h3>REVO Morning</h3>
+                        <p class="coffee__description">горький, послевкусие сладкое, цветочное</p>
+
+                        <div class="coffee__actions">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="coffee__card coffee__card-horiz">
+                    <div class="coffee__container coffee__container-horiz">
+                        <img class="coffee__image animation" src="./assets/img/coffee-orange.png" alt="Упаковка кофе с оранжевой наклейкой"/>
+                    </div>
+
+                    <div class="coffee__content coffee__content-horiz">
+                        <h4 class="coffee__price coffee_price-horiz">139.000</h4>    
+                        <h3>REVO Origin</h3>
+                        <p class="coffee__description">последний вкус сладкий, небольшой горький, вкус души</p>
+
+                        <div class="coffee__actions">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="coffee__card coffee__card-horiz">
+                    <div class="coffee__container coffee__container-horiz">
+                        <img class="coffee__image animation" src="./assets/img/w-coffee-blue.png" alt="Упаковка кофе с синей наклейкой"/>
+                    </div>
+
+                    <div class="coffee__content coffee__content-horiz">
+                        <h4 class="coffee__price coffee_price-horiz">85.000</h4>
+                        <h3>REVO Everyday</h3>
+                        <p class="coffee__description">сбалансированный, послевкусие горького шоколада</p>
+
+                        <div class="coffee__actions">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="coffee__card coffee__card-horiz">
+                    <div class="coffee__container coffee__container-horiz">
+                        <img class="coffee__image animation" src="./assets/img/w-coffee-brown.png" alt="Упаковка кофе с коричневой наклейкой"/>
+                    </div>
+
+                    <div class="coffee__content coffee__content-horiz">
+                        <h4 class="coffee__price coffee_price-horiz">75.000</h4>
+                        <h3>REVO Đậm Đà</h3>
+                        <p class="coffee__description">насыщенный, горьковатый, традиционный</p>
+
+                        <div class="coffee__actions">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
+                        </div>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section>
-            <header>
-                <p>Лучший подарок Для Лучшего Друга</p>
+        <section id="giftset" class="giftset">
+            <div class="giftset__background"></div>
+            <header class="titleArea">
+                <p class="titleArea__subtitle">Лучший подарок Для Лучшего Друга</p>
                 <h2>Подарочный набор</h2>
             </header>
 
-            <img src="./assets/img/coffee-gift.png" alt="Подарочный набор с кофе"/>
-
-            <article>
-                <div>
-                    <h4>285.000</h4>
-                    <h3>Подарочный набор "Вьетнамский кофе фин"</h3>
-
-                    <p>Отличный подарок для ценителей кофе. Компания Revo тщательно отбирает кофейные зерна, обжаривает их&nbsp;в&nbsp;соответствии с&nbsp;технологией и&nbsp;ноу-хау, полученными от&nbsp;известных мастеров, а&nbsp;также с&nbsp;любовью и&nbsp;увлечением кофемашины ... создают чашечки для чистого кофе специально для вас.</p>
+            <div class="giftset__wrapper">
+                <article class="giftset__main">
+                    <img class="giftset__image" src="./assets/img/coffee-gift.png" alt="Подарочный набор с кофе"/>
                     
-                    <div>
-                        <div>
-                            <img src="./assets/icons/coffee-beans.png" alt="Изображение кофейных зерен"/>
+                    <div  class="coffee__content giftset__content">
+                        <h4 class="coffee__price">285.000</h4>
+                        <h3>Подарочный набор "Кофе фин"</h3>
 
-                            <div>
-                                <p>Тип зерна</p>
-                                <p>Изысканная смесь Робусты</p>
+                        <p class="coffee__description">Отличный подарок для ценителей кофе. Компания Revo тщательно отбирает кофейные зерна, обжаривает их&nbsp;в&nbsp;соответствии с&nbsp;технологией и&nbsp;ноу-хау, полученными от&nbsp; мастеров, а&nbsp;также с&nbsp;любовью&nbsp; создают чашечки для чистого кофе специально для вас.</p>
+                        
+                        <div class="giftset__points">
+                            <div class="giftset__point">
+                                <img class="giftset__icon animation" src="./assets/icons/coffee-beans.png" alt="Изображение кофейных зерен"/>
+
+                                <div>
+                                    <p class="coffee__description giftset__text">Тип зерна</p>
+                                    <p class="coffee__description giftset__text"><b>Смесь Робусты</b></p>
+                                </div>
+                            </div>
+
+                            <div class="giftset__point">
+                                <img class="giftset__icon animation" src="./assets/icons/mountains.png" alt="Изображение гор"/>
+
+                                <div>
+                                    <p class="coffee__description giftset__text">Высота</p>
+                                    <p class="coffee__description giftset__text"><b>700 - 800m</b></p>
+                                </div>
                             </div>
                         </div>
 
-                        <div>
-                            <img src="./assets/icons/mountains.png" alt="Изображение гор"/>
-
-                            <div>
-                                <p>Высота</p>
-                                <p>700 - 800m</p>
-                            </div>
+                        <div class="coffee__actions coffee-actions-giftset">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ СЕЙЧАС</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
                         </div>
                     </div>
 
-                    <div>
-                        <button>Купить сейчас</button>
-                        <button>Подробнее</button>
+                    <div class="giftset__buttons">
+                        <button class="giftset__button">1</button>
+                        <button class="giftset__button giftset__button-inacitve">2</button>
+                        <button class="giftset__button giftset__button-inacitve">3</button>
                     </div>
-                </div>
-
-                <div>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                </div>
-            </article>
+                </article>
+            </div>
         </section>
 
-        <section>
-            <header>
-                <p>Ваш персонализированный кофе</p>
+        <section id="coffee-line-vert" class="coffee__section">
+            <div class="coffee__background coffee__background-vert"></div>
+            <header class="titleArea">
+                <p class="titleArea__subtitle">Ваш персонализированный кофе</p>
                 <h2>Комбо PHIN PHÊ</h2>
             </header>
 
-            <div>
-                <article>
-                    <img src="./assets/img/coffee-brown.png" alt="Упаковка кофе с коричневой наклейкой"/>
-
-                    <div>
-                        <h4>139.000</h4>
-                        <p>155.000</p>
+            <div class="coffee__line coffee__line-vert">
+                <article class="coffee__card coffee__card-vert">
+                    <div class="coffee__container coffee__container-vert">
+                        <img class="animation" src="./assets/img/coffee-brown.png" alt="Упаковка кофе с коричневой наклейкой"/>
                     </div>
 
-                    <h3>Комбо Revo Đậm Đà</h3>
-                    <p>Содержание кофеина в&nbsp;Revo достаточно велико, чтобы не&nbsp;дать вам заснуть...</p>
+                    <div class="coffee__content coffee__content-vert">
+                        <div class="coffee__actions">
+                            <h4 class="coffee__price">139.000</h4>
+                            <p class="sale__price"><s>155.000</s></p>
+                        </div>
 
-                    <div>
-                        <button>Купить сейчас</button>
-                        <button>Подробнее</button>
-                    </div>
-                </article>
+                        <h3>Комбо Revo Đậm Đà</h3>
+                        <p class="coffee__description">Содержание кофеина в&nbsp;Revo достаточно велико, чтобы...</p>
 
-                <article>
-                    <img src="./assets/img/coffee-blue.png" alt="Упаковка кофе с синей наклейкой"/>
-
-                    <div>
-                        <h4>156.000</h4>
-                        <p>165.000</p>
-                    </div>
-
-                    <h3>Комбо Revo Everyday</h3>
-                    <p>В&nbsp;Revo Everyday смешаны горечь семян робусты и&nbsp;аромат.</p>
-
-                    <div>
-                        <button>Купить сейчас</button>
-                        <button>Подробнее</button>
+                        <div class="coffee__actions">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
+                        </div>
                     </div>
                 </article>
 
-                <article>
-                    <img src="./assets/img/coffee-red.png" alt="Упаковка кофе с красной наклейкой"/>
-
-                    <div>
-                        <h4>275.000</h4>
-                        <p>260.000</p>
+                <article class="coffee__card coffee__card-vert">
+                    <div class="coffee__container coffee__container-vert">
+                        <img class="animation" src="./assets/img/coffee-blue.png" alt="Упаковка кофе с синей наклейкой"/>
                     </div>
 
-                    <h3>Комбо Revo Honey</h3>
-                    <p>Мед&nbsp;&mdash; название Revo Honey происходит от&nbsp;способа обработки семян арабики...</p>
+                    <div class="coffee__content coffee__content-vert">
+                        <div class="coffee__actions">
+                            <h4 class="coffee__price">156.000</h4>
+                            <p class="sale__price"><s>165.000</s></p>
+                        </div>
 
-                    <div>
-                        <button>Купить сейчас</button>
-                        <button>Подробнее</button>
+                        <h3>Комбо Revo Everyday</h3>
+                        <p class="coffee__description">В&nbsp;Revo Everyday смешаны горечь семян робусты и&nbsp;аромат.</p>
+
+                        <div class="coffee__actions">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="coffee__card coffee__card-vert">
+                    <div class="coffee__container coffee__container-vert">
+                        <img class="animation" src="./assets/img/coffee-red.png" alt="Упаковка кофе с красной наклейкой"/>
+                    </div>
+
+                    <div class="coffee__content coffee__content-vert">
+                        <div class="coffee__actions">
+                            <h4 class="coffee__price">275.000</h4>
+                            <p class="sale__price"><s>260.000</s></p>
+                        </div>
+
+                        <h3>Комбо Revo Honey</h3>
+                        <p class="coffee__description">Мед&nbsp;&mdash; Revo Honey происходит от&nbsp;способа обработки...</p>
+
+                        <div class="coffee__actions">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="coffee__card coffee__card-vert">
+                    <div class="coffee__container coffee__container-vert">
+                        <img class="animation" src="./assets/img/coffee-brown.png" alt="Упаковка кофе с коричневой наклейкой"/>
+                    </div>
+
+                    <div class="coffee__content coffee__content-vert">
+                        <div class="coffee__actions">
+                            <h4 class="coffee__price">139.000</h4>
+                            <p class="sale__price"><s>155.000</s></p>
+                        </div>
+
+                        <h3>Комбо Revo Đậm Đà</h3>
+                        <p class="coffee__description">Содержание кофеина в&nbsp;Revo достаточно велико, чтобы...</p>
+
+                        <div class="coffee__actions">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="coffee__card coffee__card-vert">
+                    <div class="coffee__container coffee__container-vert">
+                        <img class="animation" src="./assets/img/coffee-blue.png" alt="Упаковка кофе с синей наклейкой"/>
+                    </div>
+
+                    <div class="coffee__content coffee__content-vert">
+                        <div class="coffee__actions">
+                            <h4 class="coffee__price">156.000</h4>
+                            <p class="sale__price"><s>165.000</s></p>
+                        </div>
+
+                        <h3>Комбо Revo Everyday</h3>
+                        <p class="coffee__description">В&nbsp;Revo Everyday смешаны горечь семян робусты и&nbsp;аромат.</p>
+
+                        <div class="coffee__actions">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="coffee__card coffee__card-vert">
+                    <div class="coffee__container coffee__container-vert">
+                        <img class="animation" src="./assets/img/coffee-red.png" alt="Упаковка кофе с красной наклейкой"/>
+                    </div>
+
+                    <div class="coffee__content coffee__content-vert">
+                        <div class="coffee__actions">
+                            <h4 class="coffee__price">275.000</h4>
+                            <p class="sale__price"><s>260.000</s></p>
+                        </div>
+
+                        <h3>Комбо Revo Honey</h3>
+                        <p class="coffee__description">Мед&nbsp;&mdash; Revo Honey происходит от&nbsp;способа обработки...</p>
+
+                        <div class="coffee__actions">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
+                        </div>
                     </div>
                 </article>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>Revo Coffee Вьетнам - 2018</p>
+    <footer class="footer">
+        <p class="footer__text">Revo Coffee Вьетнам - 2018</p>
     </footer>
 </body>
 </html>

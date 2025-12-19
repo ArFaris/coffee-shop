@@ -1,0 +1,22 @@
+.coffee__section {
+    position: relative;
+    min-height: 100vh;
+}
+
+.coffee__background {
+    position: absolute;
+    bottom: 0;
+    width: 25%;
+    background-color: var(--primary-color);
+    z-index: -1;
+}
+
+.coffee__background-horiz {
+    left: 0;
+    height: 120vh;
+}
+
+.coffee__background-vert {
+    right: 0;
+    height: 112vh;
+}

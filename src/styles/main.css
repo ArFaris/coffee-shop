@@ -1,0 +1,20 @@
+@import './base/reset.css';
+@import './base/fonts.css';
+@import './base/variables.css';
+@import './base/base.css';
+
+@import './components/HeaderNav/HeaderNav.css';
+@import './components/TitleArea/TitleArea.css';
+@import './components/BaseInfo/BaseInfo.css';
+@import './components/CoffeeCard/CoffeeCard.css';
+@import './components/Footer/Footer.css';
+@import './components/CoffeeLine/CoffeeLine.css';
+@import './components/ButtonsGroup/ButtonsGroup.css';
+@import './components/GiftsetButtons/GiftsetButtons.css';
+
+@import './sections/HeaderSection/HeaderSection.css';
+@import './sections/BaseInfoSection/BaseInfo.css';
+@import './sections/GiftsetSection/GiftsetSection.css';
+@import './sections/CoffeeSection/CoffeeSection.css';
+
+@import './utils/animation.css';

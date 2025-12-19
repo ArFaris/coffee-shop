@@ -1,0 +1,20 @@
+.titleArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--title-area-margin) auto;
+}
+
+.titleArea__subtitle {
+    margin-bottom: var(--subtitle-area-margin);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+}
+
+#base-info .titleArea {
+    margin-block: var(--title-area-margin-base);
+}
+
+#coffee-line-vert .titleArea {
+    margin-top: 0;
+}
