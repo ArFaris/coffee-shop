@@ -1,0 +1,66 @@
+.coffee__card {
+    display: flex;
+    scroll-snap-align: start;
+    transition: var(--transition);
+}
+
+.coffee__card-horiz {
+    width: var(--coffee-horizontal-width);
+}
+
+.coffee__card-vert {
+    flex-direction: column;
+    min-width: 25.5vw;
+}
+
+.coffee__container {
+    padding-block: var(--image-container-padding);
+    background-color: var(--light-gray);
+}
+
+.coffee__container-horiz {
+    width: 35%;
+}
+
+.coffee-container-vert {
+    width: 100%;
+    padding-inline: var(--image-container-padding);
+}
+
+.coffee__image {
+    height: 100%;
+}
+
+.coffee__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: var(--coffee-content-padding);
+    background-color: #fff;
+}
+
+.coffee__content-horiz {
+    width: 65%;
+}
+
+.coffee__content-vert {
+    width: 100%;
+    padding-block: 1.25rem;
+}
+
+.coffee__description {
+    margin-block: var(--coffee-description-margin);
+}
+
+.coffee__price {
+    color: var(--accent-color--dark);
+}
+
+.coffee_price-horiz {
+    margin-bottom: var(--coffee-price-margin);
+}
+
+.coffee__card:hover {
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+    transform: translateY(-0.5rem);
+}

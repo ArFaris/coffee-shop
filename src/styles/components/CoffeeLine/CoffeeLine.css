@@ -1,0 +1,70 @@
+.coffee__line {
+    width: fit-content;
+    margin: auto;
+    padding: 2rem;
+    gap: var(--coffee-line-gap);
+    margin-left: var(--coffee-line-padd-left);
+    max-width: calc(100vw - var(--coffee-line-padd-left));
+    scrollbar-width: none;
+    anchor-name: --coffee-carousel;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.coffee__line-horiz {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.coffee__line-vert {
+    display: flex;
+}
+
+.coffee__line::scroll-button(*) {
+    border: none;
+    width: var(--scroll-button-width);
+    height: var(--scroll-button-height);
+    border-radius: 50%;
+    background-color: var(--accent-color--dark);
+    color: var(--accent-color--light);
+    cursor: pointer;
+    transition: var(--transition);
+    position: absolute;
+    position-anchor: --coffee-carousel;
+    align-self: anchor-center;
+
+    font-size: var(--font-size-scroll-button);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffee__line::scroll-button(*):hover,
+.coffee__line::scroll-button(*):focus {
+    background-color: var(--accent-color--hover);
+}
+
+.coffee__line::scroll-button(*):active {
+    translate: 1px 1px;
+}
+
+.coffee__line::scroll-button(*):disabled {
+    opacity: 0;
+    cursor: unset;
+}
+
+.coffee__line-horiz::scroll-button(left) {
+    content: "←";
+    right: calc(anchor(left) + 0.5rem);
+}
+
+.coffee__line-vert::scroll-button(left) {
+    content: "←";
+    right: calc(anchor(left) - 1rem);
+}
+
+.coffee__line::scroll-button(right) {
+    content: "→";
+    left: calc(anchor(right) - 6rem);
+}

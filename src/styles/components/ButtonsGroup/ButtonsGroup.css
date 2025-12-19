@@ -1,0 +1,46 @@
+.coffee__actions {
+    display: flex;
+    gap: var(--coffee-actions-gap);
+    align-items: center;
+}
+
+.coffee-actions-giftset {
+    gap: var(--actions-giftset-gap);
+}
+
+.coffee__button {
+    font-weight: 700;
+    font-size: var(--font-size-xxs);
+    border-radius: var(--coffee-button-radius);
+    transition: var(--transition);
+}
+
+.coffee__button-inactive {
+    color: var(--primary-color);
+}
+
+.coffee__button-active {
+    color: var(--accent-color--light);
+    padding: var(--button-active-padding);
+    background-color: var(--accent-color--dark);
+}
+
+.coffee__button:hover {
+    transform: scale(1.05);
+}
+
+.coffee__button-active:hover {
+    background-color: var(--accent-color--hover);
+}
+
+.coffee__button-inactive:hover {
+    color: var(--accent-color--dark);
+}
+
+.coffee__button-active:active {
+    background-color: var(--accent-color--active);
+}
+
+.coffee__button-inactive:active {
+    color: var(--accent-color--active);
+}

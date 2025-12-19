@@ -1,0 +1,111 @@
+:root {
+    /* Цветовая палитра */
+    --primary-color: #415167;
+    --accent-color--dark: #C7A17A;
+    --accent-color--light: #F9F5E8;
+    --dark-gray: #151D28;
+    --light-gray: #EDF0F5;
+    --background-color: #F8FBFE;
+    --accent-color--hover: #b78e65;
+    --accent-color--active: #886643;
+
+    /* Размеры текста */
+    --font-size-xxs: 0.75rem;   /* 12px */
+    --font-size-xs: 1rem;       /* 16px */
+    --font-size-sm: 1.25rem;    /* 20px */
+    --font-size-xl: 1.5rem;     /* 24px */
+    --font-size-2xl: 2.5rem;    /* 40px */
+    --font-size-3xl: 3.375rem;  /* 54px */
+    --font-size-scroll-button: 1.3rem;
+
+    /* Mежстрочный интервал */
+    --font-line-xs: 1.25rem;     /* 20px */
+    --font-line-sm: 1.5rem;      /* 24px */
+    --font-line-xl: 1.75rem;     /* 28px */
+    --font-line-2xl: 2.125rem;   /* 34px */
+    --font-line-3xl: 3.375rem;   /* 54px */
+
+    /* Заголовок хедера */
+    --header-title-width: 6.25rem;
+    --header-title-padding: 3.75rem;
+    --header-title-left: 8.75rem;
+    --title-accent-padding: 0.25rem 0.5rem;
+    --title-accent-left: -0.5rem;
+
+    /* Плавность анимаций */
+    --transition: all 0.3s ease;
+
+    /* Тень */
+    --box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+
+    /* Иконка хедера */
+    --header-icon-width: 5rem;
+
+    /* Основная навигация */
+    --nav-padding-block: 3.75rem;
+    --nav-padding-inline: 3rem;
+    --nav-gap: 5rem;
+    --nav-list-gap: 1rem;
+
+    /* Иконка корзины */
+    --nav-icon-width: 1rem;
+
+    /* Заголовок и подзаголовок */
+    --title-area-margin: 2rem;
+    --title-area-margin-base: 4.375rem;
+    --subtitle-area-margin: 0.25rem;
+
+    /* Футер */
+    --footer-padding: 0.625rem;
+
+    /* Информация о продукте */
+    --base-info-gap: 3.875rem;
+    --base-card-width: 10.5rem;
+    --base-icon-width: 3.75rem;
+    --base-icon-bottom: 1.875rem;
+    --base-title-bottom: 0.5rem;
+
+    /* Лента с кофейными продуктами */
+    --coffee-line-gap: 1.25rem;
+    --coffee-line-padd-left: 10vw;
+    --coffee-line-padd-bottom: 0.625rem;
+
+    /* Карточка с кофе */    
+    --coffee-horizontal-width: 26rem;
+    --image-container-padding: 0.625rem;
+
+    /* Контент карточки с кофе */
+    --coffee-content-padding: 2.1875rem;
+    --coffee-price-margin: 0.25rem;
+    --coffee-actions-gap: 1rem;
+    --coffee-button-radius: 1.5rem;
+    --button-active-padding: 0.25rem 0.5rem;
+    --coffee-description-margin: 1rem;
+
+    /* Секция с подарком */
+    --giftset-background-width: 75%;
+    --giftset-image-width: 50%;
+
+    --giftset-points-margin: 1.25rem;
+    --giftset-points-gap: 3rem;
+
+    --giftset-icon-width: 1.75rem;
+
+    --giftset-content-padd-block: 7vh;
+    --giftset-content-padd-inline: 17vw 2.1875rem;
+    --giftset-content-width: 54vw;
+
+    --actions-giftset-gap: 3rem;
+    --giftset-button-border: 1px solid var(--light-gray);
+    --giftset-button-padding: 1.5rem;
+
+    /* Позиционирование внутри giftset */
+    --giftset-wrapper-top: -15%;
+    --giftset-image-left: -11rem;
+    --giftset-image-top: 10%;
+    --giftset-main-right: -2rem;
+
+    /* Кнопка для скролла ленты */
+    --scroll-button-width: 2.2rem;
+    --scroll-button-height: 2.2rem;
+}
