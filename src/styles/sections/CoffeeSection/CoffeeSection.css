@@ -20,3 +20,20 @@
     right: 0;
     height: 112vh;
 }
+
+@media(max-width: 1024px) {
+    #coffee-line-horiz {
+        margin-bottom: 4rem;
+    }
+
+    .coffee__background-horiz {
+        height: 115vh;
+    }
+}
+
+@media(max-width: 450px) {
+    .coffee__background-vert {
+        width: 55vw;
+        height: 112vh;
+    }
+}

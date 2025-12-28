@@ -1,5 +1,6 @@
 .coffee__actions {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--coffee-actions-gap);
     align-items: center;
 }
@@ -43,4 +44,14 @@
 
 .coffee__button-inactive:active {
     color: var(--accent-color--active);
+}
+
+@media(max-width: 1024px) {
+    .coffee__content-vert .coffee__actions {
+        gap: 0.5rem;
+    }
+
+    .coffee__actions p {
+        margin-bottom: 1rem;
+    }
 }

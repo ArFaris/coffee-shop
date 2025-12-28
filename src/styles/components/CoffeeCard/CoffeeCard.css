@@ -64,3 +64,27 @@
     filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
     transform: translateY(-0.5rem);
 }
+
+@media(max-width: 1024px) {
+    .coffee__card-vert {
+        min-width: 27.5vw;
+    }
+
+    .coffee__content-vert {
+        padding-inline: 1.25rem;
+    }
+}
+
+@media(max-width: 450px) {
+    .coffee__card-horiz {
+        width: calc(90vw - 1rem);
+    }
+
+    .coffee__content-horiz {
+        padding-inline: 1rem;
+    }
+
+    .coffee__card-vert {
+        min-width: 50vw;
+    }
+}
