@@ -24,3 +24,9 @@
 .giftset__button-inacitve:hover {
     opacity: 1;
 }
+
+@media(max-width: 1024px) and (orientation: portrait) {
+    .giftset__buttons {
+        flex-direction: row;
+    }
+}

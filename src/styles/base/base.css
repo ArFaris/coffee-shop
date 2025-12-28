@@ -1,6 +1,6 @@
 html {
     font-family: "Nunito", sans-serif;
-    font-size: 1.5vw;
+    font-size: сдфьз(14px, 1.5vw, 18px);
     background-color: var(--background-color);
     color: var(--primary-color);
     scroll-behavior: smooth;
@@ -30,4 +30,85 @@ h3 {
 p {
     line-height: var(--font-size-xs);
     font-size: var(--font-size-xxs);
+}
+
+/* iPad Pro вертикально / планшеты */
+@media (max-width: 1024px) and (orientation: portrait) {
+    html {
+        font-size: 3vw;
+    }
+
+    h1 {
+        font-size: var(--font-size-xl);
+        line-height: var(--font-line-2xl);
+    }
+}
+
+/* iPad горизонтально / маленькие ноутбуки */
+@media (max-width: 992px) {
+    html {
+        font-size: 1.5vw;
+    }
+}
+
+/* Мобильные горизонтально */
+@media (max-width: 768px) and (orientation: landscape) {
+    html {
+        font-size: 1.7vw;
+    }
+}
+
+/* Большие мобильные */
+@media (max-width: 576px) {
+    html {
+        font-size: 2vw;
+    }
+}
+
+/* Средние мобильные */
+@media (max-width: 480px) {
+    html {
+        font-size: 2.3vw;
+    }
+}
+
+/* Маленькие мобильные */
+@media (max-width: 425px) { 
+    html {
+        font-size: 2.5vw;
+    }
+}
+
+/* iPhone 12/13 Pro */
+@media (max-width: 390px) {
+    html {
+        font-size: 2.7vw;
+    }
+}
+
+/* iPhone SE / маленькие Android */
+@media (max-width: 375px) {
+    html {
+        font-size: 3vw;
+    }
+}
+
+/* Абсолютный минимум*/
+@media (max-width: 320px) {
+    html {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .nav {
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
 }

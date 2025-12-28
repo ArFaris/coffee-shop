@@ -31,3 +31,25 @@
     height: 100%;
     max-height: 100vh;
 }
+
+@media(max-width: 1024px) and (orientation: portrait) {
+    .header {
+        grid-template-columns: 0fr 1fr 1fr;
+    }
+
+    .header__image {
+        height: 60%;
+    }
+
+    .header__title {
+        position: absolute;
+        bottom: 0;
+        left: 5.5rem;
+        height: auto;
+        gap: 4rem;
+    }
+
+    .header__icon {
+        width: 3rem;
+    }
+}

@@ -64,3 +64,42 @@
 .giftset__text {
     margin: 0;
 }
+
+@media(max-width: 1024px) and (orientation: portrait) {
+    .giftset__wrapper {
+        top: 6rem;
+    }
+
+    .giftset__main {
+        width: 90%;
+        flex-direction: column;
+        margin: auto;
+        right: 0;
+    }
+
+    .giftset__content {
+        max-width: 100%;
+        padding-inline: 2rem;
+    }
+
+    .giftset__image {
+        left: 10rem;
+        top: -15rem;
+    }
+}
+
+@media(max-width: 450px) {
+    .giftset__content {
+        padding-bottom: 2rem;
+    }
+
+    .giftset__image {
+        left: 3.5rem;
+        top: -11rem;
+        width: 65%;
+    }
+
+    .giftset__background {
+        width: 50vw;
+    }
+}

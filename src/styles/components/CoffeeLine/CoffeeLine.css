@@ -13,8 +13,9 @@
 
 .coffee__line-horiz {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--coffee-line-gap);
 }
 
 .coffee__line-vert {
@@ -67,4 +68,82 @@
 .coffee__line::scroll-button(right) {
     content: "→";
     left: calc(anchor(right) - 6rem);
+}
+
+@media(max-width: 1024px) and (orientation: portrait) {
+    .coffee__line-horiz {
+        max-width: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .coffee__line-vert {
+        margin-left: 2.2rem;
+    }
+
+    .coffee__line {
+        row-gap: 1rem;
+        column-gap: 1rem;
+        padding: 3rem;
+    }
+
+    .coffee__line-horiz::scroll-button(right) {
+        left: calc(anchor(right));
+    }
+
+    .coffee__line-vert::scroll-button(right) {
+        left: calc(anchor(right) - 1.5rem);
+    }
+}
+
+@media(max-width: 450px) and (orientation: portrait) {
+    .coffee__line-horiz {
+        max-width: 90%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .coffee__line-horiz::scroll-button(right) {
+        left: calc(anchor(right) - 3rem);
+    }
+
+    .coffee__line-horiz::scroll-button(left) {
+        right: calc(anchor(left) - 1rem);
+    }
+
+    .coffee__line-vert {
+        margin-left: 6.5rem;
+        width: 50vw;
+    }
+
+    .coffee__line-vert::scroll-button(right) {
+        left: calc(anchor(right) + 1rem);
+    }
+
+    .coffee__line-vert::scroll-button(left) {
+        right: calc(anchor(left) + 1rem);
+    }
+}
+
+@media (max-width: 1024px) {
+    .coffee__line-horiz {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .coffee__line-horiz {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .coffee__line-horiz {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 }

@@ -18,3 +18,9 @@
 #coffee-line-vert .titleArea {
     margin-top: 0;
 }
+
+@media(max-width: 1024px) {
+    #coffee-line-horiz .titleArea {
+        margin-bottom: 0;
+    }
+}

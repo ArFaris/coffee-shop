@@ -27,12 +27,30 @@
     transform: translateY(-2px);
 }
 
-.nav__link {
-    color: var(--light-gray);
-    font-size: var(--font-size-xxs);
-    transition: var(--transition);
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--nav-list-gap);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--light-gray)
 }
 
 .nav__link:hover {
     color: var(--accent-color--dark);
+}
+
+@media (max-width: 768px) {
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .nav {
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
 }
