@@ -1,6 +1,6 @@
 html {
     font-family: "Nunito", sans-serif;
-    font-size: сдфьз(14px, 1.5vw, 18px);
+    font-size: 1.5vw;
     background-color: var(--background-color);
     color: var(--primary-color);
     scroll-behavior: smooth;
@@ -44,71 +44,50 @@ p {
     }
 }
 
-/* iPad горизонтально / маленькие ноутбуки */
-@media (max-width: 992px) {
-    html {
-        font-size: 1.5vw;
-    }
-}
-
-/* Мобильные горизонтально */
-@media (max-width: 768px) and (orientation: landscape) {
-    html {
-        font-size: 1.7vw;
-    }
-}
-
-/* Большие мобильные */
-@media (max-width: 576px) {
-    html {
-        font-size: 2vw;
-    }
-}
-
-/* Средние мобильные */
-@media (max-width: 480px) {
-    html {
-        font-size: 2.3vw;
-    }
-}
-
-/* Маленькие мобильные */
-@media (max-width: 425px) { 
-    html {
-        font-size: 2.5vw;
-    }
-}
-
-/* iPhone 12/13 Pro */
-@media (max-width: 390px) {
-    html {
-        font-size: 2.7vw;
-    }
-}
-
-/* iPhone SE / маленькие Android */
-@media (max-width: 375px) {
+@media(max-width: 1024px) and (orientation: portrait) {
     html {
         font-size: 3vw;
     }
 }
 
-/* Абсолютный минимум*/
-@media (max-width: 320px) {
+/* Планшеты и большие мобильные */
+@media (max-width: 768px) {
     html {
-        font-size: 3.5vw;
+        font-size: 3vw; /* было 2vw */
     }
 }
 
-@media (max-width: 768px) {
-    .nav__list {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+/* Средние мобильные - УВЕЛИЧИВАЕМ */
+@media (max-width: 576px) { /* добавляем промежуточный */
+    html {
+        font-size: 3vw;
     }
-    
-    .nav {
-        padding: 2rem 1rem;
-        gap: 2rem;
+}
+
+/* Малые мобильные - портрет */
+@media (max-width: 576px) and (orientation: portrait) {
+    html {
+        font-size: 5vw; /* было 2.7vw */
+    }
+}
+
+/* Малые мобильные - ландшафт */
+@media (max-width: 576px) and (orientation: landscape) {
+    html {
+        font-size: 3.3vw;
+    }
+}
+
+/* Очень маленькие - защита минимума */
+@media (max-width: 350px) {
+    html {
+        font-size: max(5.5vw, 14px); /* было 3.3vw + защита */
+    }
+}
+
+/* Абсолютный минимум */
+@media (max-width: 320px) {
+    html {
+        font-size: max(4.2vw, 15px);
     }
 }

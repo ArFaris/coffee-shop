@@ -24,3 +24,19 @@
         margin-bottom: 0;
     }
 }
+
+@media(max-width: 576px) {
+    #base-info .titleArea {
+        margin-bottom: 3rem;
+        margin-inline: 1rem;
+        text-align: center;
+    }
+
+    #coffee-line-vert .titleArea, #coffee-line-horiz .titleArea {
+        padding-top: 4rem;
+    }
+
+    #coffee-line-horiz .titleArea {
+        margin-bottom: 3rem;
+    }
+}
