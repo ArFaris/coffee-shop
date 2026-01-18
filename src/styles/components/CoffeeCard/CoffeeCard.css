@@ -108,5 +108,11 @@
 
     .coffee__container-horiz {
         min-width: 100%;
+        align-items: center;
+    }
+
+    .coffee__image {
+        height: auto;
+        width: auto;
     }
 }

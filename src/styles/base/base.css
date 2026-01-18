@@ -44,21 +44,8 @@ p {
     }
 }
 
-@media(max-width: 1024px) and (orientation: portrait) {
-    html {
-        font-size: 3vw;
-    }
-}
-
 /* Планшеты и большие мобильные */
 @media (max-width: 768px) {
-    html {
-        font-size: 3vw; /* было 2vw */
-    }
-}
-
-/* Средние мобильные - УВЕЛИЧИВАЕМ */
-@media (max-width: 576px) { /* добавляем промежуточный */
     html {
         font-size: 3vw;
     }
@@ -67,7 +54,7 @@ p {
 /* Малые мобильные - портрет */
 @media (max-width: 576px) and (orientation: portrait) {
     html {
-        font-size: 5vw; /* было 2.7vw */
+        font-size: 5vw;
     }
 }
 
@@ -81,13 +68,13 @@ p {
 /* Очень маленькие - защита минимума */
 @media (max-width: 350px) {
     html {
-        font-size: max(5.5vw, 14px); /* было 3.3vw + защита */
+        font-size: max(5.5vw, 16px);
     }
 }
 
 /* Абсолютный минимум */
 @media (max-width: 320px) {
     html {
-        font-size: max(4.2vw, 15px);
+        font-size: max(4.2vw, 16px);
     }
 }

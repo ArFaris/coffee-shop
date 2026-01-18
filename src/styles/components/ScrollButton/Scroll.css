@@ -1,0 +1,44 @@
+.scrollTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max(1rem, 54px);
+    height: max(1rem, 54px);
+    border-radius: 50%;
+    background: var(--accent-color--hover);
+    padding: 0.2rem;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    z-index: 2998;
+    color: var(--light-gray);
+    visibility: hidden;
+    font-size: 25px;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.scrollTop.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scrollTop:hover {
+    background: var(--accent-color--active);
+    transform: scale(1.1);
+}
+
+.scrollTop:active {
+    transform: scale(0.95);
+}
+
+/* Для мобильных устройств */
+@media(max-width: 768px) {
+    .scrollTop {
+        width: max(1rem, 52px); 
+        height: max(1rem, 52px); 
+        bottom: max(1rem, 20px); 
+        right: max(1rem, 20px); 
+        font-size: 22px;
+    }
+}
