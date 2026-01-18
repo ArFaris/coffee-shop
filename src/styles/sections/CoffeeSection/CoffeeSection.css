@@ -37,3 +37,13 @@
         height: 112vh;
     }
 }
+
+@media(max-width: 576px) {
+    .coffee__background-vert {
+        height: 80vh;
+    }
+
+    .coffee__background-horiz {
+        display: none;
+    }
+}

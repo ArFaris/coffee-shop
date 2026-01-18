@@ -1,6 +1,6 @@
 .giftset {
     position: relative;
-    min-height: 105vh;
+    min-height: 100vh;
 }
 
 .giftset__background {
@@ -101,5 +101,25 @@
 
     .giftset__background {
         width: 50vw;
+    }
+}
+
+@media(max-width: 576px) {
+    .giftset__background {
+        height: 125vh;
+        bottom: -7rem;
+    }
+
+    .giftset__image {
+        position: unset;
+        margin-inline: auto;
+    }
+
+    .giftset__wrapper {
+        position: unset;
+    }
+
+    .giftset__main {
+        box-shadow: none;
     }
 }

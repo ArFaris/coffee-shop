@@ -13,9 +13,8 @@
 
 .coffee__line-horiz {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: var(--coffee-line-gap);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .coffee__line-vert {
@@ -125,25 +124,22 @@
     }
 }
 
-@media (max-width: 1024px) {
-    .coffee__line-horiz {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+@media(max-width: 576px) {
+    .coffee__line-vert {
+        width: calc(100vw - 8.4rem);
+        margin-inline: auto;
     }
-}
 
-@media (max-width: 768px) {
     .coffee__line-horiz {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        max-width: 90%;
-        margin: auto;
+        width: calc(100vw - 2rem);
+        margin-inline: auto;
+        grid-template-columns: repeat(2, 47%);
+        align-self: stretch;
+        overflow-x: hidden;
+        padding: 0;
     }
-}
 
-@media (max-width: 480px) {
-    .coffee__line-horiz {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+    .coffee__line-horiz::scroll-button(*) {
+        display: none;
     }
 }

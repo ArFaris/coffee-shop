@@ -88,3 +88,25 @@
         min-width: 50vw;
     }
 }
+
+@media(max-width: 576px) {
+    .coffee__card-vert {
+        min-width: calc(100vw - 8.4rem);
+    }
+
+    .coffee__card-horiz {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .coffee__content-horiz {
+        width: auto;
+        padding-block: 1rem;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .coffee__container-horiz {
+        min-width: 100%;
+    }
+}

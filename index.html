@@ -18,9 +18,10 @@
 
         <img class="header__image" src="./assets/img/banner.png" alt="Баннер главной страницы"/>
 
-        <aside class="nav">
-            <a class="nav__icon-link" href="#"><img class="nav__icon" src="./assets/icons/shopping-cart.png" alt="Корзина"/></a>
-            <nav>
+        <aside class="menu">
+            <nav class="nav" id="nav">
+                <a class="nav__icon-link" href="#"><img class="nav__icon" src="./assets/icons/shopping-cart.png" alt="Корзина"/></a>
+            
                 <ul class="nav__list">
                     <li>
                         <a class="nav__link" href="#main-header">ГЛАВНАЯ</a>
@@ -32,13 +33,21 @@
                         <a class="nav__link" href="#coffee-line-horiz">ВИДЫ КОФЕ</a>
                     </li>
                     <li>
-                        <a class="nav__link" href="#giftset">ПОДАРОЧНЫЕ НАБОРЫ</a>
+                       <a class="nav__link" href="#giftset">ПОДАРОЧНЫЕ НАБОРЫ</a>
                     </li>
                     <li>
                         <a class="nav__link" href="#coffee-line-vert">КОМБО</a>
                     </li>
                 </ul>
             </nav>
+
+            <img class="menu__logo" src="./assets/LOGO.png" alt="Логотип"/>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню" area-expanded="false">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </button>
         </aside>
     </header>
 
@@ -414,5 +423,6 @@
     <footer class="footer">
         <p class="footer__text">Revo Coffee Вьетнам - 2018</p>
     </footer>
+    <script src="src/app/menu.js"></script>
 </body>
 </html>
