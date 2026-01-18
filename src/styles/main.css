@@ -4,6 +4,7 @@
 @import './base/base.css';
 
 @import './components/HeaderNav/HeaderNav.css';
+@import './components/ScrollButton/Scroll.css';
 @import './components/TitleArea/TitleArea.css';
 @import './components/BaseInfo/BaseInfo.css';
 @import './components/CoffeeCard/CoffeeCard.css';
