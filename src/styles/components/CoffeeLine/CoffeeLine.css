@@ -143,3 +143,19 @@
         display: none;
     }
 }
+
+@media(max-width: 768px) and (orientation: landscape) {
+    .coffee__line {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-inline: auto;
+        width: 100%;
+    }
+}
+
+@media(max-width: 350px) {
+    .coffee__line {
+        padding: 0.5rem;
+    }
+}

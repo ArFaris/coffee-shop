@@ -44,3 +44,10 @@
         padding: 1rem 0.5rem;
     }
 }
+
+@media(max-width: 768px) and (orientation: landscape) {
+    .base-info {
+        flex-wrap: wrap;
+        margin-bottom: 20vh;
+    }
+}

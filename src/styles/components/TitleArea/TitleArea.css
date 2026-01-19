@@ -40,3 +40,25 @@
         margin-bottom: 3rem;
     }
 }
+
+@media(max-width: 768px) and (orientation: landscape) {
+    #coffee-line-vert .titleArea {
+        padding-top: 20vh;
+    }
+}
+
+@media(max-width: 576px) and (orientation: landscape) {
+    #coffee-line-horiz .titleArea {
+        margin-top: 0;
+        padding-top: 10vh;
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-width: 350px) {
+    .titleArea {
+        text-align: center;
+        white-space: normal;
+        max-width: calc(100% - 1rem);
+    }
+}

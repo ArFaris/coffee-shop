@@ -28,7 +28,7 @@
     transform: scale(1.1);
 }
 
-.scrollTop:active {
+.scrollTop:focus-visible {
     transform: scale(0.95);
 }
 
