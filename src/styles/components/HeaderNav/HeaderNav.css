@@ -134,3 +134,28 @@
         display: block;
     }
 }
+
+@media(max-width: 768px) and (orientation: landscape) {
+    .menu {
+        height: 10vh;
+        padding-block: 0.2rem;
+    }
+
+    .menu-toggle {
+        max-height: 5vh;
+        padding-block: 0;
+        gap: 1.5vh;
+    }
+
+    .menu-toggle__line {
+        min-height: 0.5vh;
+    }
+    
+    .menu-toggle.active .menu-toggle__line:nth-child(1) {
+        transform: rotate(45deg) translate(2.3vh, 2.3vh);
+    }
+
+    .menu-toggle.active .menu-toggle__line:nth-child(3) {
+        transform: rotate(-45deg) translate(0.7vh, -0.7vh);
+    }
+}

@@ -1,7 +1,7 @@
 .header {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1.5fr auto 1fr;
+    grid-template-columns: 1.2fr 2fr 0.8fr;
 }
 
 .header__title {
@@ -30,6 +30,7 @@
 .header__image {
     height: 100%;
     max-height: 100vh;
+    object-fit: cover;
 }
 
 @media(max-width: 1024px) and (orientation: portrait) {
@@ -54,7 +55,7 @@
     }
 }
 
-@media(max-width: 576px) {
+@media(max-width: 768px) {
     .header {
         display: flex;
         flex-direction: column-reverse;
@@ -68,5 +69,24 @@
 
     .header__icon {
         display: none;
+    }
+
+    .header__image {
+        max-height: 60vh;
+    }
+}
+
+@media(max-width: 768px) and (orientation: landscape) {
+    .header {
+        justify-content: start;
+        max-height: 100vh;
+    }
+
+    .header__title {
+        padding-top: 5vh;
+    }
+
+    .menu__logo {
+        max-height: 6vh;
     }
 }

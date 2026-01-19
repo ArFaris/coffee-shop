@@ -88,7 +88,35 @@
     }
 }
 
-@media(max-width: 576px) {
+@media(max-width: 768px) and (orientation: landscape) {
+    .giftset__main {
+        width: 90%;
+        flex-direction: column;
+        margin: auto;
+        right: 0;
+    }
+    
+    .giftset__content {
+        max-width: 100%;
+        padding-inline: 2rem;
+    }
+
+    .giftset__image {
+        position: unset;
+        margin-inline: auto;
+        width: 40%;
+    }
+
+    .giftset__wrapper {
+        position: unset;
+    }
+
+    .giftset__background {
+        width: 50vw;
+    }
+}
+
+@media(max-width: 576px) and (orientation: portrait) {
     .giftset__background {
         height: 125vh;
         bottom: -7rem;
@@ -109,6 +137,8 @@
     }
 
     .giftset__content {
+        max-width: 100%;
+        padding-inline: 2rem;
         padding-bottom: 2rem;
     }
 }

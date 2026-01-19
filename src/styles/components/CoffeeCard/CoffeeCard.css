@@ -89,7 +89,7 @@
     }
 }
 
-@media(max-width: 576px) {
+@media(max-width: 576px) and (orientation: portrait) {
     .coffee__card-vert {
         min-width: calc(100vw - 8.4rem);
     }
@@ -101,7 +101,7 @@
 
     .coffee__content-horiz {
         width: auto;
-        padding-block: 1rem;
+        padding: 1rem;
         justify-content: space-between;
         height: 100%;
     }
@@ -114,5 +114,44 @@
     .coffee__image {
         height: auto;
         width: auto;
+    }
+
+    .coffee__card {
+        overflow-x: hidden;
+    }
+}
+
+@media(max-width: 768px) and (orientation: landscape) {
+    .coffee__card-vert {
+        flex-direction: row;
+    }
+
+    .coffee__card-horiz {
+        margin-inline: auto;
+    }
+
+    .coffee__image {
+        height: auto;
+        width: auto;
+    }
+
+    .coffee__container-vert {
+        display: flex;
+        align-items: center;
+    }
+
+    .coffee__container-horiz {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 576px) and (orientation: landscape) {
+    .coffee__content {
+        padding: 1rem;
+    }
+
+    .coffee__card {
+        min-width: 100%;
     }
 }
