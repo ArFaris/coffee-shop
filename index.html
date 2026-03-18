@@ -20,7 +20,7 @@
 
         <aside class="menu">
             <nav class="nav" id="nav">
-                <a class="nav__icon-link" href="#"><img class="nav__icon" src="./assets/icons/shopping-cart.png" alt="Корзина"/></a>
+                <a id="cart" class="nav__icon-link" href="#"><img class="nav__icon" src="./assets/icons/shopping-cart.png" alt="Корзина"/></a>
             
                 <ul class="nav__list">
                     <li>
@@ -290,8 +290,8 @@
                 <h2>Комбо PHIN PHÊ</h2>
             </header>
 
-            <div class="coffee__line coffee__line-vert">
-                <article class="coffee__card coffee__card-vert">
+            <div class="coffee__line coffee__line-vert" id="coffee__line-vert">
+                <article data-price="139000" data-sale="155000" id="product-0001" class="coffee__card coffee__card-vert">
                     <div class="coffee__container coffee__container-vert">
                         <img class="animation" src="./assets/img/coffee-brown.png" alt="Упаковка кофе с коричневой наклейкой"/>
                     </div>
@@ -312,7 +312,7 @@
                     </div>
                 </article>
 
-                <article class="coffee__card coffee__card-vert">
+                <article data-price="156000" data-sale="165000" id="product-0002" class="coffee__card coffee__card-vert">
                     <div class="coffee__container coffee__container-vert">
                         <img class="animation" src="./assets/img/coffee-blue.png" alt="Упаковка кофе с синей наклейкой"/>
                     </div>
@@ -333,7 +333,7 @@
                     </div>
                 </article>
 
-                <article class="coffee__card coffee__card-vert">
+                <article data-price="275000" data-sale="260000" id="product-0003" class="coffee__card coffee__card-vert">
                     <div class="coffee__container coffee__container-vert">
                         <img class="animation" src="./assets/img/coffee-red.png" alt="Упаковка кофе с красной наклейкой"/>
                     </div>
@@ -354,7 +354,7 @@
                     </div>
                 </article>
                 
-                <article class="coffee__card coffee__card-vert">
+                <article data-price="139000" data-sale="155000" id="product-0004" class="coffee__card coffee__card-vert">
                     <div class="coffee__container coffee__container-vert">
                         <img class="animation" src="./assets/img/coffee-brown.png" alt="Упаковка кофе с коричневой наклейкой"/>
                     </div>
@@ -375,7 +375,7 @@
                     </div>
                 </article>
 
-                <article class="coffee__card coffee__card-vert">
+                <article data-price="156000" data-sale="165000" id="product-0005" class="coffee__card coffee__card-vert">
                     <div class="coffee__container coffee__container-vert">
                         <img class="animation" src="./assets/img/coffee-blue.png" alt="Упаковка кофе с синей наклейкой"/>
                     </div>
@@ -396,7 +396,28 @@
                     </div>
                 </article>
 
-                <article class="coffee__card coffee__card-vert">
+                <article data-price="275000" data-sale="260000" id="product-0006" class="coffee__card coffee__card-vert">
+                    <div class="coffee__container coffee__container-vert">
+                        <img class="animation" src="./assets/img/coffee-red.png" alt="Упаковка кофе с красной наклейкой"/>
+                    </div>
+
+                    <div class="coffee__content coffee__content-vert">
+                        <div class="coffee__actions">
+                            <h4 class="coffee__price">275.000</h4>
+                            <p class="sale__price"><s>260.000</s></p>
+                        </div>
+
+                        <h3>Комбо Revo Honey</h3>
+                        <p class="coffee__description">Мед&nbsp;&mdash; Revo Honey происходит от&nbsp;способа обработки...</p>
+
+                        <div class="coffee__actions">
+                            <button class="coffee__button coffee__button-active">КУПИТЬ</button>
+                            <button class="coffee__button coffee__button-inactive">ПОДРОБНЕЕ</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article data-price="275000" data-sale="260000" id="product-0007" class="coffee__card coffee__card-vert">
                     <div class="coffee__container coffee__container-vert">
                         <img class="animation" src="./assets/img/coffee-red.png" alt="Упаковка кофе с красной наклейкой"/>
                     </div>
@@ -426,6 +447,6 @@
 
     <button class="scrollTop" id="scrollTop" aria-label="Прокрутить страницу к началу">↑</button>
 
-    <script src="src/app/menu.js"></script>
+    <script type="module" src="src/app/app.js"></script>
 </body>
 </html>

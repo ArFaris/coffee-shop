@@ -19,6 +19,7 @@
 
 .coffee__line-vert {
     display: flex;
+    align-self: normal;
 }
 
 .coffee__line::scroll-button(*) {
