@@ -12,6 +12,9 @@
 @import './components/CoffeeLine/CoffeeLine.css';
 @import './components/ButtonsGroup/ButtonsGroup.css';
 @import './components/GiftsetButtons/GiftsetButtons.css';
+@import './components/Cart/Cart.css';
+@import './components/Pagination/Pagination.css';
+@import './components/Cart/CartData.css';
 
 @import './sections/HeaderSection/HeaderSection.css';
 @import './sections/BaseInfoSection/BaseInfo.css';

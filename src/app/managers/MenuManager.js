@@ -1,5 +1,4 @@
-
-class MenuManager {
+export class MenuManager {
     constructor() {
         this.menuToggle = document.getElementById('menu-toggle');
         this.mainNav = document.getElementById('nav');
@@ -11,6 +10,8 @@ class MenuManager {
 
         this.navLinks = document.querySelectorAll('.nav__link');
         this.toggleMenu = this.toggleMenu.bind(this);
+
+        this.init();
     }
 
     init() {
@@ -71,8 +72,3 @@ class MenuManager {
         })
     }
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    const menuManager = new MenuManager();
-    menuManager.init();
-})

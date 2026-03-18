@@ -1,0 +1,16 @@
+.pagination {
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.pagination__btn.active {
+    background: var(--accent-color--active);
+}
+
+@media(max-width: 576px) {
+    .pagination__btn {
+        min-width: auto;
+    }
+}
