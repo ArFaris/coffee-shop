@@ -57,10 +57,6 @@
 }
 
 @media(max-width: 576px) {
-    .coffee__button {
-        min-width: 100%;
-    }
-
     .coffee__actions {
         gap: 1rem;
     }
