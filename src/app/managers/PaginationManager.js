@@ -77,8 +77,6 @@ export class PaginationManager {
         const start = page * this.numberOfProducts - this.numberOfProducts;
         const arrayProducts = [...this.listOfProducts];
         const visibleProducts = arrayProducts.slice(start, start + this.numberOfProducts);
-        console.log('МАССИВ ПРОДУКТОВ')
-        console.log(arrayProducts);
         visibleProducts.forEach(product => product.style.display = hidden ? 'none' : 'flex');
     }
 

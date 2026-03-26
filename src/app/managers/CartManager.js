@@ -29,14 +29,13 @@ export class CartManager {
         })
 
         this.modelWindow.addEventListener('click', (e) => {
-            if (e.target.classList.contains('close-btn')) {
+            if (e.target.classList.contains('close-btn') && !e.target.classList.contains('close-btn-data')) {
                 this.#toggleCartModelWindow();
             }
         });
     }
 
     #toggleCartModelWindow = () => {
-        console.log(this.modelWindow)
         this.modelWindow.classList.toggle('active');
         this.cartOverlay.classList.toggle('active');
 
